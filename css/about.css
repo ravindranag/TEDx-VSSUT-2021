@@ -1,0 +1,37 @@
+.About{
+    height:300vh;
+    display:flex;
+}
+.About .test{
+    display: flex;
+}
+.Xpic{
+    width: 50%;
+    height: 100vh;
+    margin:0!important;
+}
+.about-ted{
+    width:90%;
+}
+.about-ted div{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin:50px;
+    padding: 50;
+}
+.about-ted div> p{
+    width: 80%;
+    font-size: 25px;
+    line-height: 30px;    
+}
+.about-ted h2{
+    font-size: 70px;
+}
+
+.tedvss p{
+    bottom:20px;
+}
