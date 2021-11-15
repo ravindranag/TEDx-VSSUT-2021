@@ -18,20 +18,21 @@
 
 <body>
 
-    <span class="screen-darken"></span>
-    <section id="home">
+
+    <section id="home" class="d-flex justify-content-center align-items-center">
+        <span class="screen-darken"></span>
         <nav class="container-fluid d-lg-none position-fixed top-0 end-0 p-3 bg-light">
-            <img src="logos/logo-1l.svg" class="navbar-brand">
+            <img src="logos/logo-1l-b.svg" class="navbar-brand" width="150px">
             <img data-trigger="navbar_main" class="d-lg-none float-end" src="icons/nav-toggle-black.png" width="40px">
 
         </nav>
         <!-- ============= COMPONENT ============== -->
         <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg navbar-dark bg-light fixed-top py-3 py-lg-2">
             <div class="container">
-                <div class="offcanvas-header">
+                <!-- <div class="offcanvas-header">
                     <button class="btn-close float-end"></button>
-                </div>
-                <img src="logos/logo-1l.svg" class="navbar-brand" width="300px">
+                </div> -->
+                <img src="logos/logo-1l-b.svg" class="navbar-brand" width="250px">
 
                 <ul class="navbar-nav d-flex flex-column flex-lg-row p-2">
                     <li class="nav-item mx-2 my-2 my-lg-0"> <a class="nav-link text-dark" href="#">Home </a> </li>
@@ -45,10 +46,13 @@
             </div>
             <!-- container-fluid.// -->
         </nav>
+        <div class="container d-flex justify-content-center align-items-center">
+            <img src="logos/logo-1l-w.svg" alt="" width="300px">
+        </div>
     </section>
-    <footer class="p-5">
+    <footer class="py-5">
         <div class="container row mx-auto">
-            <p class="col-10 mx-auto mb-2 d-flex justify-content-center">This independent <span>TEDx</span> event is operated under license from <span>TED</span>.
+            <p class="col-10 mx-auto mb-2 d-flex justify-content-center text-center">This independent <span class="red">TEDx</span> event is operated under license from <span class="red">TED</span>.
             </p>
             <div class="col-10 container d-flex justify-content-center align-items-center pt-3 py-md-0">
                 <img class="m-1" src="icons/icon-fb.svg" alt="TEDxVSSUT facebook" width="24px">

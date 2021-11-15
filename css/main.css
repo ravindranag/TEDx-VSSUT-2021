@@ -32,7 +32,7 @@ p {
     font-size: 14px;
 }
 
-span {
+span.red {
     display: contents;
     color: var(--red) !important;
 }
