@@ -16,9 +16,11 @@
             opacity: 1;
         }
         
-        hr.hr-text::before {
-            content: attr(data-content);
-            display: inline-block;
+        #hr {
+            position: relative;
+        }
+        
+        .hr-text {
             background: #121212;
             font-weight: bold;
             color: #fff;
@@ -46,29 +48,34 @@
 
     <div id="header" class="h-100 ">
         <div class="container-fluid container-md d-flex justify-content-center py-5 ">
-            <img src="logos/logo-1l.svg " alt="TEDx VSSUT" class="col-10 col-md-6 mx-auto">
+            <img src="logos/logo-1l-w.svg" alt="TEDx VSSUT" class="col-10 col-md-6 mx-auto">
         </div>
     </div>
-    <div id="notificaton ">
-        <div class="container ">
-            <hr data-content="GET NOTIFIED " class="hr-text text-center my-5 col-md-8 mx-auto">
+    <div id="notificaton">
+        <div class="container">
+            <!-- <hr data-content="GET NOTIFIED" class="hr-text text-center my-5 col-md-8 mx-auto"> -->
+            <div id="hr" class="container-fluid my-5 col-md-8 mx-auto">
+                <hr>
+                <p class="hr-text">GET NOTIFIED</p>
+            </div>
             <form class="col-md-6 mx-auto my-5">
                 <div class="form-group my-2 ">
-                    <input type="email " class="form-control rounded-0 text-center text-uppercase shadow-none" id="inputEmail" placeholder="Enter email ">
+                    <input type="email" class="form-control rounded-0 text-center text-uppercase shadow-none" id="inputEmail" placeholder="Enter email ">
                 </div>
-                <button type="submit " class="btn w-100 my-2 border border-3 rounded-0 text-uppercase">Submit</button>
+                <button type="submit" class="btn w-100 my-2 border border-3 rounded-0 text-uppercase">Submit</button>
             </form>
         </div>
     </div>
     <div id="footer ">
-        <div class="container-fluid container-md row mx-auto py-5 ">
-            <p class="col-10 mx-auto mb-2 d-flex justify-content-center text-light text-center font-weight-bold">This independent <span>TEDx</span> event is operated under license from <span>TED</span>.
+        <div class="container-fluid container-md row mx-auto py-5">
+            <p class="col-10 mx-auto mb-2 d-flex justify-content-center text-light text-center font-weight-bold">This independent <span class="red">TEDx</span> event is operated under license from <span class="red">TED</span>.
+
             </p>
-            <div class="col-10 container d-flex justify-content-center align-items-center pt-3 py-md-0 ">
-                <img class="m-1 " src="icons/icon-fb.svg " alt="TEDxVSSUT facebook " width="24px ">
-                <img class="m-1 " src="icons/icon-instagram.svg " alt="TEDxVSSUT instagram " width="24px ">
-                <img class="m-1 " src="icons/icon-linkedin.svg " alt="TEDxVSSUT linkedin " width="24px ">
-                <p class="my-0 mx-2 text-light ">@tedxvssut</p>
+            <div class="col-10 container d-flex justify-content-center align-items-center pt-3 py-md-0">
+                <img class="m-1 " src="icons/icon-fb.svg" alt="TEDxVSSUT facebook" width="24px ">
+                <img class="m-1 " src="icons/icon-instagram.svg" alt="TEDxVSSUT instagram" width="24px">
+                <img class="m-1 " src="icons/icon-linkedin.svg" alt="TEDxVSSUT linkedin" width="24px">
+                <p class="my-0 mx-2 text-light">@tedxvssut</p>
             </div>
         </div>
     </div>
