@@ -47,6 +47,12 @@
         justify-content: center;
         align-items: center;
     }
+    .about-ted h2{
+        font-size: 20px;
+    }
+    .about-ted div>p{
+        font-size: 16px;
+    }
     .scroll-magic-pin-spacer{
         display: none;
     }
