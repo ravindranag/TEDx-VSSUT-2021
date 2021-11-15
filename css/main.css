@@ -33,7 +33,8 @@ p {
 }
 
 span {
-    color: var(--red);
+    display: contents;
+    color: var(--red) !important;
 }
 
 
@@ -45,6 +46,13 @@ span {
     background: url('/logos/ted-bg.jpg') no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+
+/* bootstrap overrides */
+
+.bg-dark {
+    background: #121212 !important;
 }
 
 .navbar-light .navbar-nav .nav-link.active,
@@ -63,3 +71,6 @@ span {
 .navbar-toggler:focus {
     box-shadow: none;
 }
+
+
+/* bootstrap overrides end */
