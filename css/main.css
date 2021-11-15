@@ -61,11 +61,11 @@ nav{
 #portfolio p{
 	
 	top: 0px;
-	margin: 20px;
+	margin: 0px;
 	padding-bottom: 10px;
 	color: var(--red);
 	border-bottom: 3px solid var(--dark);
-	font-size: 200%;
+	font-size: 1em;
 	border-bottom: 2px solid white;
 }
 .portfolio .portfolio-item {
@@ -210,7 +210,7 @@ nav{
   
   .portfolio .portfolio-wrap:hover .portfolio-info {
 	opacity: 1;
-	position: relative;
+	position: absolute;
   }
   
   .portfolio .portfolio-wrap:hover .portfolio-info::before {
