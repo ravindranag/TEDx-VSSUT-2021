@@ -25,7 +25,7 @@
 }
 .about-ted div> p{
     width: 80%;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;    
 }
 .about-ted h2{
@@ -34,4 +34,20 @@
 
 .tedvss p{
     bottom:20px;
+}
+
+@media screen and (max-width:990px){
+    #Xp{
+        display: none;
+    }
+    .about-ted{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .scroll-magic-pin-spacer{
+        display: none;
+    }
 }
