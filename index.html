@@ -12,6 +12,8 @@
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
 
 
 
@@ -20,6 +22,41 @@
 </head>
 
 <body>
+
+
+	<section id="home" class="d-flex justify-content-center align-items-center">
+        <span class="screen-darken"></span>
+        <nav class="container-fluid d-lg-none position-fixed top-0 end-0 p-3 bg-light" style="z-index:9;">
+            <img src="logos/logo-1l-b.svg" class="navbar-brand" width="150px">
+            <img data-trigger="navbar_main" class="d-lg-none float-end" src="icons/nav-toggle-black.png" width="40px">
+
+        </nav>
+        <!-- ============= COMPONENT ============== -->
+        <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg navbar-dark bg-light fixed-top py-3 py-lg-2">
+            <div class="container">
+                <!-- <div class="offcanvas-header">
+                    <button class="btn-close float-end"></button>
+                </div> -->
+                <img src="logos/logo-1l-b.svg" class="navbar-brand" width="250px">
+
+                <ul class="navbar-nav d-flex flex-column flex-lg-row p-2">
+                    <li class="nav-item mx-2 my-2 my-lg-0"> <a class="nav-link text-dark" href="#">Home </a> </li>
+                    <li class="nav-item mx-2 my-2 my-lg-0"><a class="nav-link text-dark" href="#"> About </a></li>
+                    <li class="nav-item mx-2 my-2 my-lg-0"> <a class="nav-link text-dark" href="#"> Speakers </a> </li>
+                    <li class="nav-item mx-2 my-2 my-lg-0"><a class="nav-link text-dark" href="#"> Sponsors </a></li>
+                    <li class="nav-item mx-2 my-2 my-lg-0"><a class="nav-link text-dark" href="#"> Gallery </a></li>
+                    <li class="nav-item mx-2 my-2 my-lg-0"><a class="btn btn-outline-danger">Coming soon</a></li>
+                </ul>
+
+            </div>
+            <!-- container-fluid.// -->
+        </nav>
+        <div class="container d-flex justify-content-center align-items-center">
+            <img src="logos/logo-1l-w.svg" alt="" width="300px">
+        </div>
+    </section>
+
+
 	  <!-- ======= Portfolio Section ======= -->
 	  <section id="portfolio" class="portfolio">
 		<div class="container">
@@ -127,23 +164,23 @@
 		
 		</div>
 	</div>
+
     
-
-
-
-
-    <footer>
-        <p>This independent <span>TEDx</span> event is operated under license from <span>TED</span>.
-            <br>
-            <span>TEDxVSSUT</span> is hosted by E-Cell VSSUT.
-            <br> Website developed and maintained by <span>E-Cell VSSUT</span>.
-        </p>
-        <div class="social">
-            <img src="icons/icon-fb.svg" alt="TEDxVSSUT facebook">
-            <img src="icons/icon-instagram.svg" alt="TEDxVSSUT instagram">
-            <img src="icons/icon-linkedin.svg" alt="TEDxVSSUT linkedin">
+    <footer class="py-5">
+        <div class="container row mx-auto">
+            <p class="col-10 mx-auto mb-2 d-flex justify-content-center text-center">This independent <span class="red">TEDx</span> event is operated under license from <span class="red">TED</span>.
+            </p>
+            <div class="col-10 container d-flex justify-content-center align-items-center pt-3 py-md-0">
+                <img class="m-1" src="icons/icon-fb.svg" alt="TEDxVSSUT facebook" width="24px">
+                <img class="m-1" src="icons/icon-instagram.svg" alt="TEDxVSSUT instagram" width="24px">
+                <img class="m-1" src="icons/icon-linkedin.svg" alt="TEDxVSSUT linkedin" width="24px">
+                <p class="my-0 mx-2">@tedxvssut</p>
+            </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/nav.js"></script>
 </body>
 
 </html>

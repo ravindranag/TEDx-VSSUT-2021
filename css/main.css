@@ -32,8 +32,21 @@ p {
     font-size: 14px;
 }
 
-span {
-    color: var(--red);
+span.red {
+    display: contents;
+    color: var(--red) !important;
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background: url('/logos/ted-bg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+	z-index: 1000;
 }
 
 /*--------------------------------------------------------------
@@ -526,6 +539,17 @@ footer p {
     border-left: 1px solid #ffffff;
 }
 
+/* bootstrap overrides */
+
+.bg-dark {
+    background: #121212 !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #ffffff;
+}
+
 .social img {
     aspect-ratio: 1 / 1;
     width: 28px;
@@ -552,4 +576,11 @@ footer p {
         display: flex;
         justify-content: center;
     }
+	.navbar-toggler:focus {
+		box-shadow: none;
+	}
 }
+
+
+
+/* bootstrap overrides end */
